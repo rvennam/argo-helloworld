@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: helloworld
+  namespace: default
 spec:
   revisionHistoryLimit: 2
   selector:
@@ -57,6 +58,7 @@ spec:
 ---
 apiVersion: v1
 kind: Service
+namespace: default
 metadata:
   name: helloworld
   labels:
