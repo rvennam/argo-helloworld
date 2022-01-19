@@ -58,9 +58,9 @@ spec:
 ---
 apiVersion: v1
 kind: Service
-namespace: default
 metadata:
   name: helloworld
+  namespace: default
   labels:
     app: helloworld
     service: helloworld
